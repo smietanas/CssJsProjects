@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext");
+a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "roboto";
+  color: White;
+  margin: 8px 8px;
+}
+header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  animation: slider 15s infinite linear;
+}
+
+img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+h1 {
+  position: absolute;
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: "open sans", sans-serif;
+  color: white;
+  padding: 20px 60px;
+  animation: txt 15s linear infinite both;
+  opacity: 0;
+}
+
+h1:nth-of-type(1) {
+  top: 30%;
+  right: 20%;
+}
+
+h1:nth-of-type(2) {
+  bottom: 10%;
+  left: 10%;
+  animation-delay: 5s;
+}
+
+h1:nth-of-type(3) {
+  top: 10%;
+  left: 35%;
+  animation-delay: 10s;
+}
+
+@keyframes txt {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  23.33% {
+    opacity: 1;
+  }
+
+  28.33% {
+    opacity: 0;
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+
+  38.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext");
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "roboto";
+        color: green;
+      }
+      p {
+        font-size: 100px;
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        overflow: hidden;
+      }
+      span {
+        position: relative;
+      }
+
+      span::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        animation: move 2s steps(4, end) infinite;
+      }
+
+      @keyframes move {
+        100% {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Wstecz</a>
+    <p>Napis<span>....</span></p>
+  </body>
+</html>

@@ -1,0 +1,1015 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* nav */
+
+nav {
+  background-color: #343a40;
+  padding-left: 5%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+nav ul {
+  list-style: none;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #bbb;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-right: 2px solid black;
+}
+
+a i {
+  padding: 0 10px;
+}
+
+/* koniec */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header {
+  overflow: hidden;
+  max-width: 1920px;
+  position: relative;
+  height: calc(100vh - 50px);
+  background-color: #29a6dc;
+  font-family: "Saira Condensed", sans-serif;
+  color: white;
+  text-align: center;
+}
+header > * {
+  position: absolute;
+}
+.welcome {
+  top: 7%;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+header p {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+header button {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 38px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+header img {
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  header p {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  header h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  header button {
+    font-size: 15px;
+    line-height: 40px;
+
+    padding: 0 20px;
+  }
+  header img {
+    right: -5%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+  header img {
+    height: 53%;
+    right: -6%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 480px) {
+  header p {
+    font-size: 65px;
+    margin-bottom: 15px;
+  }
+
+  header h1 {
+    font-size: 27px;
+  }
+
+  header h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+  }
+  header button {
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 25px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  header p {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  header h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  header button {
+    font-size: 32px;
+    line-height: 150%;
+
+    padding: 0 25px;
+  }
+
+  header img {
+    height: 54%;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  .welcome {
+    text-align: left;
+    margin-top: 25px;
+    top: 5%;
+  }
+
+  header img {
+    height: 90%;
+    bottom: 0;
+    right: -7%;
+  }
+  header p {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  header h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  header button {
+    font-size: 18px;
+    line-height: 150%;
+
+    padding: 0 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 480px) {
+  header img {
+    right: -12%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .welcome {
+    left: 7%;
+    top: 10%;
+  }
+
+  header img {
+    height: 95%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 726px) {
+  header img {
+    right: -6%;
+  }
+
+  header p {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  header h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  header button {
+    font-size: 18px;
+    line-height: 150%;
+
+    padding: 0 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .welcome {
+    top: 25%;
+  }
+
+  header p {
+    font-size: 55px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  header h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  header button {
+    font-size: 22px;
+    line-height: 160%;
+
+    padding: 0 25px;
+  }
+
+  header img {
+    right: -11%;
+    height: 90%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  .welcome {
+    top: 20%;
+  }
+
+  header p {
+    font-size: 100px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  header h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  header button {
+    font-size: 30px;
+    line-height: 160%;
+
+    padding: 0 35px;
+  }
+
+  header img {
+    right: -11%;
+    height: 90%;
+  }
+}
+@media (orientation: landscape) and (min-width: 1366px) {
+  .welcome {
+    top: 12%;
+  }
+
+  header img {
+    right: -5%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+  header p {
+    font-size: 110px;
+  }
+
+  header h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  header h2 {
+    font-size: 60px;
+  }
+  header button {
+    font-size: 40px;
+    line-height: 180%;
+
+    padding: 0 40px;
+  }
+
+  header img {
+    right: -5%;
+    height: 95%;
+  }
+}
+
+/* section advantages  */
+
+section {
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+div.advantages {
+  margin: 30px 30px;
+  text-align: center;
+}
+
+div.advantages h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.advantage h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.advantage p {
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+
+.advantage img {
+  width: 100%;
+  margin: 5px auto;
+  max-width: 375px;
+}
+
+@media (min-width: 360px) {
+  div.advantages h1 {
+    font-size: 26px;
+  }
+
+  .advantage h2 {
+    font-size: 22px;
+  }
+
+  .advantage p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  div.advantages h1 {
+    font-size: 50px;
+  }
+
+  .advantage h2 {
+    font-size: 40px;
+  }
+
+  .advantage p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.advantage {
+    float: left;
+    width: 33%;
+    padding: 20px;
+  }
+
+  div.advantages h1 {
+    font-size: 50px;
+  }
+
+  .advantage h2 {
+    font-size: 22px;
+  }
+
+  .advantage p {
+    font-size: 19px;
+    line-height: 140%;
+    padding: 0 8px;
+  }
+}
+
+@media (min-width: 1366px) {
+  div.advantages h1 {
+    font-size: 60px;
+  }
+
+  .advantage h2 {
+    font-size: 26px;
+  }
+
+  .advantage p {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  div.advantages h1 {
+    font-size: 70px;
+  }
+
+  .advantage h2 {
+    font-size: 30px;
+  }
+
+  .advantage p {
+    font-size: 24px;
+    padding: 0 15px;
+  }
+}
+
+/* portfolio */
+
+.portfolio {
+  background-color: #222;
+  padding: 10px 0 30px;
+  color: white;
+}
+
+.portfolio .web img {
+  width: 100%;
+}
+
+.portfolio h1 {
+  text-align: center;
+  padding: 30px 15px;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 30px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+  background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+  background-color: #29a6dc;
+}
+
+.portfolio .project {
+  max-width: 1400px;
+  margin: 0 auto 20px;
+}
+
+.portfolio .about {
+  color: white;
+  font-family: "Saira", sans-serif;
+  font-weight: normal;
+  padding: 10px 20px 20px 0;
+  text-align: left;
+}
+.about h2 {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-bottom: 2px solid white;
+  text-indent: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.about p {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 10px 10px 10px 20px;
+}
+
+@media (min-width: 360px) {
+  .portfolio h1 {
+    font-size: 35px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+    text-indent: 20px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 480px) {
+  .portfolio h1 {
+    font-size: 40px;
+  }
+
+  .about h2 {
+    font-size: 29px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio h1 {
+    font-size: 60px;
+  }
+
+  .about h2 {
+    font-size: 46px;
+  }
+
+  .about p {
+    font-size: 30px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+  .web,
+  .about {
+    float: left;
+    width: 50%;
+  }
+
+  .web img {
+    display: block;
+  }
+
+  .portfolio h1 {
+    font-size: 60px;
+  }
+
+  .about h2 {
+    font-size: 27px;
+  }
+
+  .about p {
+    font-size: 17px;
+  }
+  .portfolio .project:nth-of-type(even) .web {
+    float: right;
+  }
+
+  .portfolio .project:nth-of-type(even) .about {
+    padding-right: 0;
+  }
+  .portfolio .project:nth-of-type(even) .about p {
+    padding-right: 20px;
+  }
+  .portfolio .project:nth-of-type(even) .about h2 {
+    text-indent: 0;
+    margin-left: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .web,
+  .about {
+    float: left;
+    width: 50%;
+  }
+
+  .web img {
+    display: block;
+  }
+
+  .portfolio h1 {
+    font-size: 80px;
+  }
+
+  .about h2 {
+    font-size: 45px;
+  }
+
+  .about p {
+    font-size: 24px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+  .portfolio h1 {
+    font-size: 80px;
+  }
+
+  .about h2 {
+    font-size: 45px;
+  }
+
+  .about p {
+    font-size: 24px;
+  }
+}
+
+/* slogan */
+
+.slogan {
+  text-align: center;
+  background-image: url(../img/motto.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+.slogan .bg {
+  padding: 30px 10px;
+  background-color: rgba(0, 63, 114, 0.5);
+  min-height: 70vh;
+}
+
+.bg h1 {
+  text-transform: uppercase;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.bg .text {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.bg .author {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 412px) {
+  .slogan .bg {
+    padding: 30px 15px;
+  }
+
+  .bg h1 {
+    font-size: 29px;
+  }
+
+  .bg .text {
+    font-size: 20px;
+  }
+
+  .bg .author {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan .bg {
+    padding: 30px 30px;
+  }
+
+  .bg h1 {
+    font-size: 45px;
+  }
+
+  .bg .text {
+    font-size: 30px;
+  }
+
+  .bg .author {
+    font-size: 22px;
+  }
+}
+
+@media (orientation: landscape) {
+  .slogan .text {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slogan .bg {
+    padding: 40px 30px;
+  }
+
+  .bg h1 {
+    font-size: 60px;
+    margin-bottom: 80px;
+  }
+
+  .bg .text {
+    font-size: 30px;
+  }
+
+  .bg .author {
+    font-size: 22px;
+  }
+}
+
+/* sekcja hobby*/
+
+.hobby {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hobby .item {
+  height: 25vh;
+}
+
+.hobby .item {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+  background-image: url(../img/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+  background-image: url(../img/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+  background-image: url(../img/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+  background-image: url(../img/hobby4.jpg);
+}
+
+.hobby .item p {
+  font-family: "saira", sans-serif;
+  color: white;
+  text-align: center;
+  /*  line-height: 25vh;*/
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.hobby h1 {
+  font-family: "saira condensed", sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 533px) {
+  .hobby .item {
+    float: left;
+    width: 50%;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .hobby h1 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  .hobby .item p {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hobby .item p {
+    padding: 0;
+    line-height: 40vh;
+    opacity: 0;
+    transition: 1s;
+    cursor: default;
+  }
+
+  .hobby .item:hover p {
+    opacity: 1;
+  }
+
+  .hobby .item {
+    background-size: 100%;
+    transition: 1s;
+  }
+
+  .hobby .item:hover {
+    background-size: 130%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hobby h1 {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+
+  .hobby .item p {
+    font-size: 40px;
+  }
+}
+
+/* kontakt*/
+
+.contact {
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+}
+
+.contact h1 {
+  font-family: "saira condensed", sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.contact .mail {
+  padding-top: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 25px;
+  font-family: "saira condensed", sans-serif;
+  font-size: 12px;
+  padding: 5px;
+}
+.mail button {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  height: 40px;
+}
+
+.mail button {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  height: 40px;
+  margin-bottom: 40px;
+  border: 2px solid white;
+}
+.socials .social img {
+  opacity: 0.7;
+}
+
+.socials .social img:hover {
+  opacity: 1;
+}
+
+.mail textarea {
+  height: 120px;
+}
+
+.mail input {
+  height: 36px;
+}
+
+.contact .socials {
+  padding-top: 30px;
+}
+
+.contact .social {
+  padding: 10px 0;
+  color: white;
+  font-family: saira condensed, sans-serif;
+}
+
+.contact .social img {
+  float: left;
+}
+
+.contact .social span {
+  line-height: 72px;
+  padding-left: 20px;
+  float: left;
+  font-size: 20px;
+}
+
+@media (min-width: 533px) {
+  .contact .social {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact h1 {
+    font-size: 60px;
+    padding: 30px 0;
+  }
+  .contact form,
+  .contact .socials {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .contact .social {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .contact input,
+  .contact button,
+  .contact textarea {
+    margin-bottom: 35px;
+  }
+  .contact input {
+    height: 46px;
+    font-size: 24px;
+  }
+
+  .contact textarea {
+    height: 180px;
+    font-size: 24px;
+  }
+
+  .contact button {
+    height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .contact button:hover {
+    color: black;
+    background-color: #fff;
+  }
+}
+
+footer {
+  background-color: #29a6dc;
+  color: white;
+  font-family: saira, sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}

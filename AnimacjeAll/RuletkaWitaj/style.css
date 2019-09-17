@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext");
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "roboto";
+  color: green;
+  margin: 8px 8px;
+}
+section {
+  height: 100px;
+  width: 500px;
+
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+  border: 2px solid black;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+@keyframes anim {
+  0% {
+    top: -500px;
+  }
+  5% {
+    top: 0px;
+  }
+  5.01% {
+    top: -500px;
+  }
+  15% {
+    top: 0;
+  }
+  15.01% {
+    top: -500px;
+  }
+  30% {
+    top: 0;
+  }
+  30.01% {
+    top: -500px;
+  }
+  60% {
+    top: 0;
+  }
+  60.01% {
+    top: -500px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  font-family: roboto;
+}
+
+.wrap1,
+.wrap2,
+.wrap3,
+.wrap4,
+.wrap5 {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+section:hover div.wrap1 {
+  opacity: 1;
+  position: absolute;
+  top: -500px;
+  left: 0;
+  animation: anim 2s linear 1 both;
+}
+section:hover div.wrap2 {
+  opacity: 1;
+  position: absolute;
+  top: -500px;
+  left: 100px;
+  animation: anim 2s linear 1 both 0.2s;
+}
+section:hover div.wrap3 {
+  opacity: 1;
+  position: absolute;
+  top: -500px;
+  left: 200px;
+  animation: anim 2s linear 1 both 0.4s;
+}
+section:hover div.wrap4 {
+  opacity: 1;
+  position: absolute;
+  top: -500px;
+  left: 300px;
+  animation: anim 2s linear 1 both 0.6s;
+}
+section:hover div.wrap5 {
+  opacity: 1;
+  position: absolute;
+  top: -500px;
+  left: 400px;
+  animation: anim 2s linear 1 both 0.8s;
+}

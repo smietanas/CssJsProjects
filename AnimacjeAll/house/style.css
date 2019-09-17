@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext");
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "roboto";
+  color: green;
+}
+span {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 120px;
+  color: white;
+  background-color: brown;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+div {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  height: 0px;
+  width: 0px;
+  transition: 2s;
+}
+
+span:hover ~ div:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 30vh;
+  background-color: brown;
+}
+span:hover ~ div:nth-of-type(2) {
+  position: absolute;
+  top: calc(50% - 15vh);
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: calc(50vh / 1.41);
+  width: calc(50vh / 1.41);
+
+  background-color: black;
+  z-index: -1;
+}
+
+span:hover ~ div:nth-of-type(3) {
+  position: absolute;
+  top: 15%;
+  left: 54%;
+  height: 10vh;
+  width: 4vh;
+  background-color: #333;
+  z-index: -2;
+}
+span:hover ~ div:nth-of-type(4) {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  height: 10vh;
+  width: 10vh;
+  background-color: yellow;
+  z-index: 1;
+}
+span:hover ~ div:nth-of-type(5) {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+  height: 10vh;
+  width: 10vh;
+  background-color: yellow;
+  z-index: 1;
+}
+
+span:hover ~ div:nth-of-type(6) {
+  position: absolute;
+  top: 55%;
+  left: 49%;
+  height: 10vh;
+  width: 6vh;
+  background-color: #222;
+  z-index: 1;
+}
+
+span:hover ~ div:nth-of-type(1) {
+  transition-delay: 0.2s;
+}
+span:hover ~ div:nth-of-type(2) {
+  transition-delay: 0.4s;
+}
+span:hover ~ div:nth-of-type(3) {
+  transition-delay: 0.6s;
+}
+span:hover ~ div:nth-of-type(4) {
+  transition-delay: 0.8s;
+}
+span:hover ~ div:nth-of-type(5) {
+  transition-delay: 1s;
+}
