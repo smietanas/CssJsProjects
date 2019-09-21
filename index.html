@@ -21,19 +21,57 @@
     <nav>
       <ul class="clearfix">
         <li>
+          <a href="#" class="main"
+            ><i class="far fa-hand-point-up"></i
+            ><span class="menuText">Start</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="news"
+            ><i class="fas fa-info"></i
+            ><span class="menuText">Aktualności</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="plans"
+            ><i class="fas fa-seedling"></i
+            ><span class="menuText">Plany</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="quotation"
+            ><i class="fas fa-quote-left"></i
+            ><span class="menuText">Cytat</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="intrests"
+            ><i class="fab fa-angellist"></i
+            ><span class="menuText">Zainteresowania</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="con"
+            ><i class="fas fa-id-card"></i
+            ><span class="menuText">Kontakt</span></a
+          >
+        </li>
+        <li>
           <a href="PrzyciskiAll/index.html"
-            ><i class="fab fa-bandcamp"></i>Przyciski</a
+            ><i class="fab fa-bandcamp"></i
+            ><span class="menuText">Przyciski</span></a
           >
         </li>
         <li>
           <a href="AnimacjeAll/index.html"
-            ><i class="fas fa-shoe-prints"></i>Animacje</a
+            ><i class="fas fa-shoe-prints"></i
+            ><span class="menuText">Animacje</span></a
           >
         </li>
       </ul>
     </nav>
 
-    <header>
+    <header id="main">
       <div class="welcome clearfix">
         <p>Witaj</p>
         <h1>Jestem Krzysztof Śmiertka,</h1>
@@ -43,7 +81,7 @@
       <img src="img/photo1.png" alt="autor" />
     </header>
 
-    <section>
+    <section class="advantages" id="news">
       <div class="advantages clearfix">
         <h1>Czym aktualnie się zajmuję</h1>
         <div class="advantage">
@@ -78,7 +116,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="plans">
       <h1>Technologie, które chcę rozwinąć</h1>
       <div class="project clearfix">
         <div class="web">
@@ -137,7 +175,7 @@
       </div>
     </section>
 
-    <section class="slogan">
+    <section class="slogan" id="quotation">
       <div class="bg">
         <h1>Mój ulubiony cytat</h1>
         <p class="text">
@@ -150,7 +188,7 @@
       </div>
     </section>
 
-    <section class="hobby clearfix">
+    <section class="hobby clearfix" id="intrests">
       <h1>W wolnym czasie uwielbiam</h1>
       <div class="item">
         <p>czytać książki</p>
@@ -166,7 +204,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="con">
       <h1>Skontaktuj sie ze mną</h1>
       <div class="mail">
         <form>
@@ -195,5 +233,11 @@
       </div>
     </section>
     <footer>&copy; Krzysztof Śmiertka</footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
