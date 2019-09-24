@@ -71,8 +71,6 @@ const justWords = [
 const index = Math.floor(Math.random() * justWords.length);
 
 const pass = justWords[index].toUpperCase();
-console.log(pass);
-
 let password = "";
 // other declarations
 const word = document.querySelector(".word");

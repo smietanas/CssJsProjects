@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext");
+.back {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "roboto";
+  color: white;
+  margin-top: 8px;
+}
+
 body {
   background-color: #000000;
   color: lightgray;
@@ -22,7 +34,7 @@ body {
   height: 30%;
   flex-basis: 100%;
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   word-spacing: 20px;
 }
 
