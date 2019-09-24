@@ -14,7 +14,12 @@
   color: white;
   margin-top: 8px;
 }
-
+.mistake {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  color: red;
+}
 body {
   background-color: #000000;
   color: lightgray;
@@ -24,7 +29,7 @@ body {
 .wrap {
   width: 800px;
   height: 70vh;
-  margin: 50px auto;
+  margin: 2px auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -129,12 +134,12 @@ img {
 /* button */
 .after {
   position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 10%;
+  right: 23%;
+  /* transform: translateX(-50%); */
   cursor: pointer;
   display: none;
-  margin: 10px 10px;
+  margin: 5px 5px;
   font-size: 40px;
   padding: 10px 30px;
   color: white;
@@ -142,7 +147,6 @@ img {
   background-color: transparent;
   overflow: hidden;
   cursor: pointer;
-  position: relative;
 }
 .after::after {
   content: "";
@@ -163,4 +167,33 @@ img {
 
 .after.active {
   display: inline-block;
+}
+.tryMe {
+  /* position: absolute;
+  bottom: 10%;
+  left: 2%; */
+  cursor: pointer;
+  margin: 5px 5px;
+  font-size: 40px;
+  padding: 10px 30px;
+  color: white;
+  border: 3px solid white;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+.other {
+  position: relative;
+
+  height: 120px;
+}
+.tryMeForm {
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+}
+
+.other input {
+  height: 30px;
+  font-size: 28px;
 }

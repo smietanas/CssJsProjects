@@ -78,6 +78,8 @@ const apl = document.querySelector(".alphabet");
 const imag = document.querySelector(".gallows img");
 let counter = 1;
 const showPassword = document.querySelector(".after");
+const spanMistakes = document.querySelector(".mistake");
+spanMistakes.textContent = "Pomyłki: 0";
 
 //cover password
 for (i = 0; i < pass.length; i++) {
@@ -148,6 +150,7 @@ apl.addEventListener("click", function(e) {
         }
       }
     } else if (!nameOfClass.includes("correct")) {
+      spanMistakes.textContent = `Pomyłki: ${counter}`;
       no.play();
       e.target.classList.add("incorrect");
       //if make mistake gallows progress
@@ -163,10 +166,35 @@ apl.addEventListener("click", function(e) {
     lose.play();
     finish("Przegrałeś :(", "lose");
     showPassword.classList.add("active");
+    tryMeForm.style.display = "none";
   }
   //if win
   else if (pass === password) {
     finish("Wygrałeś!!! :)", "win");
     win.play();
+    tryMeForm.style.display = "none";
+  }
+});
+
+//let's try
+const tryButton = document.querySelector(".tryMe");
+const tryMeForm = document.querySelector(".tryMeForm");
+const input = document.querySelector(".tryMeForm input");
+
+let inpValue = "";
+input.addEventListener("input", function(e) {
+  inpValue = e.target.value.toUpperCase();
+});
+
+tryButton.addEventListener("click", function() {
+  if (inpValue == pass) {
+    finish("Wygrałeś!!! :)", "win");
+    tryMeForm.style.display = "none";
+    win.play();
+  } else {
+    finish("Przegrałeś :(", "lose");
+    lose.play();
+    showPassword.classList.add("active");
+    tryMeForm.style.display = "none";
   }
 });
