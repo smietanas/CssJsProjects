@@ -193,6 +193,8 @@ tryButton.addEventListener("click", function() {
     win.play();
     password = pass;
     word.textContent = pass;
+  } else if (inpValue === "") {
+    alert("Nic nie wpisałeś!");
   } else {
     finish("Przegrałeś :(", "lose");
     lose.play();
