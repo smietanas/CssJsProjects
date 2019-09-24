@@ -191,6 +191,8 @@ tryButton.addEventListener("click", function() {
     finish("Wygrałeś!!! :)", "win");
     tryMeForm.style.display = "none";
     win.play();
+    password = pass;
+    word.textContent = pass;
   } else {
     finish("Przegrałeś :(", "lose");
     lose.play();
