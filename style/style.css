@@ -105,6 +105,34 @@ header button {
   padding: 0 15px;
   text-transform: uppercase;
 }
+
+.cv {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #232f34;
+  text-align: center;
+  z-index: 5;
+}
+.cv a {
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.cv:hover {
+  background-color: #f9aa33;
+  color: #232f34;
+}
+
+.cv:hover a {
+  color: #232f34;
+}
+
 header img {
   height: 50%;
   bottom: 0;
